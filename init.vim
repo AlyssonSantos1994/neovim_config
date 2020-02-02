@@ -12,6 +12,7 @@ call plug#begin()
 	Plug 'SirVer/ultisnips'
 	Plug 'honza/vim-snippets'
 	Plug 'ycm-core/YouCompleteMe'
+	Plug 'mattn/emmet-vim'
 call plug#end()
 
 
@@ -35,7 +36,7 @@ set mouse=a
 set inccommand=split
 set tabstop=2 softtabstop=0 shiftwidth=2 noexpandtab 
 let mapleader="\<space>"
-
+let g:UltiSnipsExpandTrigger="<c-j>"
 nnoremap <leader>c :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>n :vsplit<cr>
 nnoremap <c-p> :Files<cr>
